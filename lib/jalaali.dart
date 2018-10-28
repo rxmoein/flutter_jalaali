@@ -7,8 +7,34 @@ class JalaaliDate {
   int ld;
 
   DateTime _dateTime;
-  static const monthsLength = [0, 31, 59, 90, 120, 151, 181, 212, 243, 273, 304, 334];
-  static const kabiseMonthsLength = [0, 31, 60, 91, 121, 152, 182, 213, 244, 274, 305, 335];
+  static const monthsLength = [
+    0,
+    31,
+    59,
+    90,
+    120,
+    151,
+    181,
+    212,
+    243,
+    273,
+    304,
+    334
+  ];
+  static const kabiseMonthsLength = [
+    0,
+    31,
+    60,
+    91,
+    121,
+    152,
+    182,
+    213,
+    244,
+    274,
+    305,
+    335
+  ];
 
   JalaaliDate.now() {
     _dateTime = new DateTime.now();
@@ -45,17 +71,23 @@ class JalaaliDate {
     bool showTime = false,
   }) {
     if (!(showDate || showTime)) {
-      throw new Exception('At least one of arguments [showDate or showTime] must be true');
+      throw new Exception(
+          'At least one of arguments [showDate or showTime] must be true');
     }
     String stringDate = '';
     if (showDate) {
-      stringDate = year.toString() + '/' + month.toString() + '/' + day.toString();
+      stringDate =
+          year.toString() + '/' + month.toString() + '/' + day.toString();
       if (showTime) {
         stringDate += ' ';
       }
     }
     if (showTime) {
-      stringDate += _dateTime.hour.toString() + ':' + _dateTime.minute.toString() + ':' + _dateTime.second.toString();
+      stringDate += _dateTime.hour.toString() +
+          ':' +
+          _dateTime.minute.toString() +
+          ':' +
+          _dateTime.second.toString();
     }
     return stringDate;
   }
