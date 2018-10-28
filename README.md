@@ -1,11 +1,8 @@
-# Flutter jalaali package
+# Flutter jalaali package [![pub package](https://img.shields.io/badge/pub-v0.0.2-blue.svg)](https://github.com/mrdimaan/flutter_jalaali)
+
 A flutter package to make working with solar date easier. You can convert dates to solar dates and manipulate those by using this package in your app.
 
-## How to use?
+## Usage
 
-    import  'package:jalaali/jalaali.dart';
-    
-    JalaaliDate.now() // Current solar date
-    
-    DateTime dt = new DateTime.now();
-    JalaaliDate.fromDateTime(dt) // Convert datetime to solar date
+- [Documentation](https://mrdimaan.github.io/flutter_jalaali/)
+- [Pub Home Page](https://pub.dartlang.org/packages/jalaali/)
