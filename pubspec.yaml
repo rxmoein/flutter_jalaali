@@ -1,8 +1,8 @@
 name: jalaali
 description: A flutter package to help .
 version: 0.0.1
-author:
-homepage:
+author: Moein Hosseini <mrdimaan@tuta.io>
+homepage: https://github.com/mrdimaan/flutter_jalaali
 
 environment:
   sdk: ">=2.0.0-dev.68.0 <3.0.0"
