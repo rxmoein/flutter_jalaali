@@ -32,7 +32,7 @@ Constructs a `JalaaliDate` instance from a Datetime
 Returns a human-readable string for this `JalaaliDate` instance. At least one of parameters must be true
 
 | Param | Type | Default | Description |
-|:------|:-----|:--------|:------------|
+| ----- | ---- | ------- | ----------- |
 | showDate (Optional) | bool | true | show date in returned string |	
 | showTime (Optional) | bool | false | show time in returned string |
 
@@ -41,14 +41,14 @@ Returns an instance of `DateTime` from this `JalaaliDate`.
 #### `format`:
 
 | Param | Type | Description |
-|:------|:-----|:------------|
+| ----- | ---- | ----------- |
 | format (required) | `String` | specifies how returned string should be formatted |
 | persianNumbers (Optional) | `bool` | specifies usage of persian numbers like "۵" |
 
 Returns the jalaali date in determined format. You can specify what should this function return by using below table.
 
 | Input | Description | Output Example | 
-|:------|:------------|:---------------|
+| ----- | ----------- | -------------- |
 | "YYYY" | jalaali year as a 4 digit number | 1397 |
 | "YY" | jalaali year as a 2 digit number | 97 |
 | "MMM" | persian name on the month | آبان |
