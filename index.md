@@ -5,7 +5,7 @@ layout: default
 # Flutter jalaali package
 A flutter package to make working with solar date easier. You can convert dates to solar dates and manipulate those by using this package in your application.
 ## Constructors
-
+* * * 
 There is three constructors for this class:
 
 #### Default constructor
@@ -27,6 +27,7 @@ Constructs a `JalaaliDate` instance from a Datetime
     new JalaaliDate.fromDateTime(new DateTime.now());
 
 ## Methods
+* * * 
 #### `toString`:
 
 Returns a human-readable string for this `JalaaliDate` instance. At least one of parameters must be true
