@@ -44,7 +44,8 @@ int _gregorianMonthInYear(int year) {
 }
 
 bool gregorianIsValid(int year, int month, int day) {
-  if (month <= _gregorianMonthInYear(year) && day <= gregorianDaysInMonth(month, year)) {
+  if (month <= _gregorianMonthInYear(year) &&
+      day <= gregorianDaysInMonth(month, year)) {
     return true;
   }
   return false;
@@ -55,7 +56,11 @@ int gregorianToJdn(int year, int month, int day) {
   int x1 = month - (12 * c0) - 3;
   int x4 = year + c0;
   Div d = pdiv(x4, 100);
-  int jd = fdiv(146097 * d.quot, 4) + fdiv(36525 * d.rem, 100) + fdiv(153 * x1 + 2, 5) + day + 1721119;
+  int jd = fdiv(146097 * d.quot, 4) +
+      fdiv(36525 * d.rem, 100) +
+      fdiv(153 * x1 + 2, 5) +
+      day +
+      1721119;
   return jd;
 }
 

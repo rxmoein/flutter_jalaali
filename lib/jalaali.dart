@@ -3,11 +3,19 @@ library jalaali;
 import 'package:jalaali/gregorian.dart';
 import 'package:jalaali/shamsi.dart';
 import 'package:jalaali/shared.dart';
+import 'package:jalaali/translator.dart';
 
 class JalaaliDate {
+  /// The day of the month [1..31]
   int day;
+
+  /// The jalaali month [1..12]
   int month;
+
+  /// The jalaali year
   int year;
+
+  /// Temp instance of [DateTime] used for inital convertion value
   DateTime _dateTime;
 
   /// Default constructor from Jalali date
@@ -34,14 +42,21 @@ class JalaaliDate {
   }) {
     DateTime.now().toString();
     if (!(showDate || showTime)) {
-      throw new Exception('At least one of arguments [showDate or showTime] must be true');
+      throw new Exception(
+          'At least one of arguments [showDate or showTime] must be true');
     }
     String stringDate = '';
     if (showDate) {
-      stringDate = year.toString() + '/' + month.toString() + '/' + day.toString();
+      stringDate =
+          year.toString() + '/' + month.toString() + '/' + day.toString();
     }
     if (showTime) {
-      stringDate += ' ' + _dateTime.hour.toString() + ':' + _dateTime.minute.toString() + ':' + _dateTime.second.toString();
+      stringDate += ' ' +
+          _dateTime.hour.toString() +
+          ':' +
+          _dateTime.minute.toString() +
+          ':' +
+          _dateTime.second.toString();
     }
     return stringDate;
   }
@@ -66,5 +81,11 @@ class JalaaliDate {
     year = shamsi.year;
     month = shamsi.month;
     day = shamsi.day;
+  }
+
+  // Returns the jalaali date in determined format
+  String format(String format, {bool persianNumbers = false}) {
+    DateData jDate = DateData(year, month, day);
+    return translate(format, jDate, persianNumbers);
   }
 }

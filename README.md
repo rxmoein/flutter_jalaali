@@ -1,4 +1,4 @@
-# Jalaali plugin for Flutter [![pub package](https://img.shields.io/badge/pub-v0.2.0-blue.svg)](https://github.com/mrdimaan/flutter_jalaali)
+# Jalaali plugin for Flutter [![pub package](https://img.shields.io/badge/pub-v0.3.0-blue.svg)](https://github.com/mrdimaan/flutter_jalaali)
 
 A flutter package to make working with solar date easier. You can convert dates to solar dates and manipulate those by using this package in your app.
 

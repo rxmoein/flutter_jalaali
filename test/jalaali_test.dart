@@ -4,7 +4,7 @@ import 'package:jalaali/jalaali.dart';
 void main() {
   test('Current Shamsi Date', () {
     var currentDate = JalaaliDate.now();
-    print(currentDate.toString());
+    print(currentDate.format("DD MMM YY", persianNumbers: true));
     expect(1, 1);
   });
 }
