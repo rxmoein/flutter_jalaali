@@ -37,8 +37,10 @@ Returns an instance of `DateTime` from this `JalaaliDate`.
 | Param | Type | Description |
 |--|--|--|
 | format (required) | `String` | specifies how returned string should be formatted |
-| persianNumbers (Optional) | `bool` | specifies usage of persian numbers like "۵"
+| persianNumbers (Optional) | `bool` | specifies usage of persian numbers like "۵" |
+
 Returns the jalaali date in determined format. You can specify what should this function return by using below table.
+
 | Input | Description | Output Example 
 |--|--|--|
 | "YYYY" | jalaali year as a 4 digit number | 1397 
