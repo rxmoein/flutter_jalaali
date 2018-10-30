@@ -32,12 +32,14 @@ Constructs a `JalaaliDate` instance from a Datetime
 Returns a human-readable string for this `JalaaliDate` instance. At least one of parameters must be true
 
 | Param | Type | Default | Description |
-|:------|:-----|:----|---|:------------|
+|:------|:-----|:--------|:------------|
 | showDate (Optional) | bool | true | show date in returned string |	
 | showTime (Optional) | bool | false | show time in returned string |
+
 #### `toDateTime`:
 Returns an instance of `DateTime` from this `JalaaliDate`.
 #### `format`:
+
 | Param | Type | Description |
 |:------|:-----|:------------|
 | format (required) | `String` | specifies how returned string should be formatted |
