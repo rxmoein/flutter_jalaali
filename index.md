@@ -49,7 +49,7 @@ Returns an instance of `DateTime` from this `JalaaliDate`.
 Returns the jalaali date in determined format. You can specify what should this function return by using below table.
 
 | Input | Description | Output Example | 
-| ----- | ----------- | -------------- |
+| :---: | ----------- |     :---:      |
 | "YYYY" | jalaali year as a 4 digit number | 1397 |
 | "YY" | jalaali year as a 2 digit number | 97 |
 | "MMM" | persian name on the month | آبان |
