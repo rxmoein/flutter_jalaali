@@ -35,6 +35,12 @@ class JalaaliDate {
     _convertToShamsi(_dateTime.year, _dateTime.month, _dateTime.day);
   }
 
+  /// Constructs a [JalaaliDate] instance from parsing a date string
+  JalaaliDate.parse(String stringDate) {
+    _dateTime = DateTime.parse(stringDate);
+    _convertToShamsi(_dateTime.year, _dateTime.month, _dateTime.day);
+  }
+
   /// Returns a human-readable string for this instance.
   String toString({
     bool showDate = true,
