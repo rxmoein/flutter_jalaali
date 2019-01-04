@@ -20,6 +20,12 @@ Constructs a `JalaaliDate` instance with current date:
 
     new JalaaliDate.now();
 
+#### `now` constructor
+
+Constructs a `JalaaliDate` instance by parsing a timestamp string:
+
+    new JalaaliDate.parse("2013-01-19 03:14:07");
+
 #### `fromDateTime` constructor
 
 Constructs a `JalaaliDate` instance from a Datetime
