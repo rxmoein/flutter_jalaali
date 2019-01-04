@@ -20,7 +20,7 @@ Constructs a `JalaaliDate` instance with current date:
 
     new JalaaliDate.now();
 
-#### `now` constructor
+#### `parse` constructor
 
 Constructs a `JalaaliDate` instance by parsing a timestamp string:
 
