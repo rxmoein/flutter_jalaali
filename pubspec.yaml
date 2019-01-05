@@ -1,6 +1,6 @@
 name: jalaali
 description: A flutter package to make working with solar date easier. You can convert dates to solar dates and manipulate those by using this package in your app.
-version: 0.4.0
+version: 0.4.1
 author: Moein Hosseini <mrdimaan@tuta.io>
 homepage: https://github.com/mrdimaan/flutter_jalaali
 
